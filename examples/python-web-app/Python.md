@@ -32,7 +32,7 @@ docker images
 ## 2️⃣ Run the Docker Container
 
 ```bash
-docker run -p 8000:8000 -it abuabddullah/python-web-app
+docker run --name python-container -p 8000:8000 -it abuabddullah/python-web-app
 ```
 
 ### 🖥 Container Output
@@ -67,6 +67,17 @@ http://54.237.241.62:8000/demo/
 ```
 
 ---
+
+## 3️⃣ Access the container in interactive mode (-id)
+
+run:
+
+```
+docker exec -it python-container /bin/bash
+```
+
+---
+
 
 ## ⚠️ Important: Apply Migrations
 
